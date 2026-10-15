@@ -1,0 +1,28 @@
+[
+ {
+  "uuid": "crm-0001",
+  "address": "9 Heron Terrace",
+  "lists": [
+   "Code Notice"
+  ],
+  "notes": [
+   "seen 2026-05-12"
+  ]
+ },
+ {
+  "uuid": "crm-0002",
+  "address": "31 Millbrook Loop",
+  "lists": [
+   "Tax Notice"
+  ],
+  "notes": []
+ },
+ {
+  "uuid": "crm-0003",
+  "address": "7 Fennell Walk",
+  "lists": [
+   "Marlow Lien"
+  ],
+  "notes": []
+ }
+]

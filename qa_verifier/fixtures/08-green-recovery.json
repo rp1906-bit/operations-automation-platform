@@ -1,0 +1,4 @@
+{"run_id": "run-0616-a", "pipeline": "lien_scraper", "county": "marlow", "date": "2026-06-16T12:47:00Z",
+ "status": "SUCCEEDED", "exit_code": 0, "warnings": 0,
+ "docs_attempted": 20, "docs_read": 20, "rows_written": 19, "rows_missing_address": 0, "rows_ambiguous_owner": 0,
+ "delivered": true, "log_errors": [], "checker_errors": [], "fix_targets": ["records"]}

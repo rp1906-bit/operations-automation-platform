@@ -1,0 +1,497 @@
+{
+ "callers": [
+  "Caller A",
+  "Caller B"
+ ],
+ "campaigns": [
+  "Campaign A",
+  "Campaign B",
+  "Campaign C"
+ ],
+ "cap": 10000,
+ "days": [
+  {
+   "date": "2026-07-27",
+   "seed": 20260727,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-07-28",
+   "seed": 20260728,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-07-29",
+   "seed": 20260729,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-07-30",
+   "seed": 20260730,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-07-31",
+   "seed": 20260731,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-03",
+   "seed": 20260803,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "seed": 20260804,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-05",
+   "seed": 20260805,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-06",
+   "seed": 20260806,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-07",
+   "seed": 20260807,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-10",
+   "seed": 20260810,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.12,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-11",
+   "seed": 20260811,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.12,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-12",
+   "seed": 20260812,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.12,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-13",
+   "seed": 20260813,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.12,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-14",
+   "seed": 20260814,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.12,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-17",
+   "seed": 20260817,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.63,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "seed": 20260818,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.63,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "seed": 20260819,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.63,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "seed": 20260820,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.63,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "seed": 20260821,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.63,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.11
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "seed": 20260824,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-25",
+   "seed": 20260825,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "seed": 20260826,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-27",
+   "seed": 20260827,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-28",
+   "seed": 20260828,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "seed": 20260831,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.3,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "seed": 20260901,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.3,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   },
+   "automation_touched": 11600,
+   "note": "over-cap day"
+  },
+  {
+   "date": "2026-09-02",
+   "seed": 20260902,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.3,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-03",
+   "seed": 20260903,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.3,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-04",
+   "seed": 20260904,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.3,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-07",
+   "seed": 20260907,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.07,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-08",
+   "seed": 20260908,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.07,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-09",
+   "seed": 20260909,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.07,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-10",
+   "seed": 20260910,
+   "records": 852,
+   "sms_store": "stale",
+   "correct_share": 0.6,
+   "connect": 0.07,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   },
+   "note": "text-reply store not refreshed"
+  },
+  {
+   "date": "2026-09-11",
+   "seed": 20260911,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.6,
+   "connect": 0.07,
+   "skill": {
+    "Caller A": 0.14,
+    "Caller B": 0.1
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "seed": 20260914,
+   "records": 783,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.06
+   }
+  },
+  {
+   "date": "2026-09-15",
+   "seed": 20260915,
+   "records": 806,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.06
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "seed": 20260916,
+   "records": 829,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.06
+   }
+  },
+  {
+   "date": "2026-09-17",
+   "seed": 20260917,
+   "records": 852,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.06
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "seed": 20260918,
+   "records": 875,
+   "sms_store": "ok",
+   "correct_share": 0.62,
+   "connect": 0.13,
+   "skill": {
+    "Caller A": 0.15,
+    "Caller B": 0.06
+   }
+  }
+ ]
+}

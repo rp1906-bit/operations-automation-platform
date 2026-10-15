@@ -1,0 +1,5 @@
+{"run_id": "run-0610-a", "pipeline": "lien_scraper", "county": "marlow", "date": "2026-06-10T12:47:00Z",
+ "status": "SUCCEEDED", "exit_code": 0, "warnings": 0,
+ "docs_attempted": 20, "docs_read": 4, "rows_written": 16, "rows_missing_address": 1, "rows_ambiguous_owner": 1,
+ "delivered": true, "log_errors": ["timeout opening document", "timeout opening document", "timeout opening document", "http 500"],
+ "checker_errors": [], "fix_targets": ["records"], "reviews": {"reviewer_a": "clean", "reviewer_b": "clean"}}

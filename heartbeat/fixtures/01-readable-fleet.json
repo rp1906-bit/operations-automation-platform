@@ -1,0 +1,311 @@
+{
+  "scenario": "Readable fleet: eight scheduled jobs, mixed health",
+  "now": "2026-09-09T15:00:00Z",
+  "repo": "example-org/automation-fleet",
+  "expect": {
+    "level": "RED",
+    "exit_code": 1
+  },
+  "secret_names": [
+    "DAILY_EXPORT_SLACK_WEBHOOK_URL",
+    "INVENTORY_REFRESH_SLACK_WEBHOOK_URL",
+    "NIGHTLY_SYNC_SLACK_WEBHOOK_URL",
+    "OPS_HEARTBEAT_SLACK_WEBHOOK_URL",
+    "RECORD_CLEANUP_SLACK_WEBHOOK_URL",
+    "STATUS_PING_SLACK_WEBHOOK_URL",
+    "WEEKLY_REPORT_SLACK_WEBHOOK_URL",
+    "WEEKLY_ROLLUP_SLACK_WEBHOOK_URL"
+  ],
+  "workflows": [
+    {
+      "file": "nightly-sync.yml",
+      "name": "nightly-sync",
+      "cron": "0 6 * * *",
+      "notify_secret": "NIGHTLY_SYNC_SLACK_WEBHOOK_URL",
+      "note": "healthy daily job",
+      "runs": [
+        {
+          "run_started_at": "2026-09-09T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-08T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-07T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-06T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-05T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-04T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-03T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-02T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-01T06:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-31T06:14:00Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "file": "weekly-rollup.yml",
+      "name": "weekly-rollup",
+      "cron": "0 11 * * 1",
+      "notify_secret": "WEEKLY_ROLLUP_SLACK_WEBHOOK_URL",
+      "note": "scheduled, but zero runs ever",
+      "runs": [],
+      "total_count": 0
+    },
+    {
+      "file": "daily-export.yml",
+      "name": "daily-export",
+      "cron": "30 7 * * *",
+      "notify_secret": "DAILY_EXPORT_SLACK_WEBHOOK_URL",
+      "note": "three consecutive failures after a run of successes",
+      "runs": [
+        {
+          "run_started_at": "2026-09-09T07:44:00Z",
+          "conclusion": "failure"
+        },
+        {
+          "run_started_at": "2026-09-08T07:44:00Z",
+          "conclusion": "failure"
+        },
+        {
+          "run_started_at": "2026-09-07T07:44:00Z",
+          "conclusion": "timed_out"
+        },
+        {
+          "run_started_at": "2026-09-06T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-05T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-04T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-03T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-02T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-01T07:44:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-31T07:44:00Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "file": "inventory-refresh.yml",
+      "name": "inventory-refresh",
+      "cron": "0 9 * * 1-5",
+      "notify_secret": "INVENTORY_REFRESH_SLACK_WEBHOOK_URL",
+      "note": "one failure, then back to normal expected",
+      "runs": [
+        {
+          "run_started_at": "2026-09-09T09:14:00Z",
+          "conclusion": "failure"
+        },
+        {
+          "run_started_at": "2026-09-08T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-07T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-04T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-03T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-02T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-01T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-31T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-28T09:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-27T09:14:00Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "file": "morning-digest.yml",
+      "name": "morning-digest",
+      "cron": "0 13 * * 1-5",
+      "notify_secret": "MORNING_DIGEST_SLACK_WEBHOOK_URL",
+      "note": "runs fine, but its notification secret was never created",
+      "runs": [
+        {
+          "run_started_at": "2026-09-09T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-08T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-07T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-04T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-03T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-02T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-01T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-31T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-28T13:14:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-27T13:14:00Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "file": "record-cleanup.yml",
+      "name": "record-cleanup",
+      "cron": "0 4 * * *",
+      "notify_secret": "RECORD_CLEANUP_SLACK_WEBHOOK_URL",
+      "note": "run history unreadable for this one workflow",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "weekly-report.yml",
+      "name": "weekly-report",
+      "cron": "0 12 * * 3",
+      "notify_secret": "WEEKLY_REPORT_SLACK_WEBHOOK_URL",
+      "note": "due 3 h ago; still inside the 12 h grace window",
+      "runs": [
+        {
+          "run_started_at": "2026-09-02T12:40:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-26T12:40:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-19T12:40:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-08-12T12:40:00Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "file": "status-ping.yml",
+      "name": "status-ping",
+      "cron": "*/30 * * * *",
+      "notify_secret": "STATUS_PING_SLACK_WEBHOOK_URL",
+      "note": "cron form the checker does not support; timing unwatched",
+      "runs": [
+        {
+          "run_started_at": "2026-09-09T14:57:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T14:27:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T13:57:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T13:27:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T12:57:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T12:27:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T11:57:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T11:27:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T10:57:00Z",
+          "conclusion": "success"
+        },
+        {
+          "run_started_at": "2026-09-09T10:27:00Z",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

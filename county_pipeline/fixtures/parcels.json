@@ -1,0 +1,142 @@
+[
+ {
+  "parcel_id": "P-1000",
+  "owner": "HARRIET VANCE",
+  "address": "14 Larkspur Row",
+  "mailing": "PO Box 200, Marlow",
+  "value": 150000
+ },
+ {
+  "parcel_id": "P-1001",
+  "owner": "ORLANDO PIKE",
+  "address": "9 Heron Terrace",
+  "mailing": "PO Box 201, Marlow",
+  "value": 157000
+ },
+ {
+  "parcel_id": "P-1002",
+  "owner": "BEATRIX OKONJO",
+  "address": "31 Millbrook Loop",
+  "mailing": "PO Box 202, Marlow",
+  "value": 164000
+ },
+ {
+  "parcel_id": "P-1003",
+  "owner": "CASPAR LINDQVIST",
+  "address": "7 Fennel Walk",
+  "mailing": "PO Box 203, Marlow",
+  "value": 171000
+ },
+ {
+  "parcel_id": "P-1004",
+  "owner": "IMOGEN STRAND",
+  "address": "22 Quarry Crossing",
+  "mailing": "PO Box 204, Marlow",
+  "value": 178000
+ },
+ {
+  "parcel_id": "P-1005",
+  "owner": "DESMOND ABARA",
+  "address": "5 Sable Hollow",
+  "mailing": "PO Box 205, Marlow",
+  "value": 185000
+ },
+ {
+  "parcel_id": "P-1006",
+  "owner": "PRUDENCE WHITLOW",
+  "address": "18 Kestrel Trail",
+  "mailing": "PO Box 206, Marlow",
+  "value": 192000
+ },
+ {
+  "parcel_id": "P-1007",
+  "owner": "FELIX MARROW",
+  "address": "3 Bramble Reach",
+  "mailing": "PO Box 207, Marlow",
+  "value": 199000
+ },
+ {
+  "parcel_id": "P-1008",
+  "owner": "SOLVEIG HANNIGAN",
+  "address": "27 Copperline Walk",
+  "mailing": "PO Box 208, Marlow",
+  "value": 206000
+ },
+ {
+  "parcel_id": "P-1009",
+  "owner": "AUGUSTINE FERRO",
+  "address": "11 Tidewater Loop",
+  "mailing": "PO Box 209, Marlow",
+  "value": 213000
+ },
+ {
+  "parcel_id": "P-1010",
+  "owner": "WINIFRED OSEI",
+  "address": "40 Juniper Terrace",
+  "mailing": "PO Box 210, Marlow",
+  "value": 220000
+ },
+ {
+  "parcel_id": "P-1011",
+  "owner": "LEOPOLD BRANNIGAN",
+  "address": "16 Alder Crossing",
+  "mailing": "PO Box 211, Marlow",
+  "value": 227000
+ },
+ {
+  "parcel_id": "P-1012",
+  "owner": "CLEMENTINE VOSS",
+  "address": "8 Wren Hollow",
+  "mailing": "PO Box 212, Marlow",
+  "value": 234000
+ },
+ {
+  "parcel_id": "P-1013",
+  "owner": "BARNABY THISTLEWOOD",
+  "address": "25 Saffron Row",
+  "mailing": "PO Box 213, Marlow",
+  "value": 241000
+ },
+ {
+  "parcel_id": "P-1014",
+  "owner": "ROSALIND ACHEBE",
+  "address": "2 Thornfield Reach",
+  "mailing": "PO Box 214, Marlow",
+  "value": 248000
+ },
+ {
+  "parcel_id": "P-1015",
+  "owner": "IGNATIUS QUELL",
+  "address": "19 Moorland Trail",
+  "mailing": "PO Box 215, Marlow",
+  "value": 255000
+ },
+ {
+  "parcel_id": "P-2001",
+  "owner": "TOBIAS RENNICK",
+  "address": "61 Ironwood Reach",
+  "mailing": "PO Box 301, Marlow",
+  "value": 210000
+ },
+ {
+  "parcel_id": "P-2002",
+  "owner": "MARGO DELACROIX",
+  "address": "4 Foxglove Walk",
+  "mailing": "PO Box 302, Marlow",
+  "value": 175000
+ },
+ {
+  "parcel_id": "P-2003",
+  "owner": "MARGO DELACROIX",
+  "address": "12 Foxglove Walk",
+  "mailing": "PO Box 303, Marlow",
+  "value": 690000
+ },
+ {
+  "parcel_id": "P-2004",
+  "owner": "MIRABEL FENWICK",
+  "address": "33 Cinder Loop",
+  "mailing": "PO Box 304, Marlow",
+  "value": 160000
+ }
+]

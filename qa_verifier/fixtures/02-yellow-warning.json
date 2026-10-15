@@ -1,0 +1,4 @@
+{"run_id": "run-0602-a", "pipeline": "lien_scraper", "county": "marlow", "date": "2026-06-02T12:47:00Z",
+ "status": "SUCCEEDED", "exit_code": 0, "warnings": 1,
+ "docs_attempted": 20, "docs_read": 14, "rows_written": 14, "rows_missing_address": 2, "rows_ambiguous_owner": 3,
+ "delivered": true, "log_errors": ["retry: slow page"], "checker_errors": [], "fix_targets": ["records"]}

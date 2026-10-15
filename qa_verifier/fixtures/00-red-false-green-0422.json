@@ -1,0 +1,4 @@
+{"run_id": "run-0422-a", "pipeline": "lien_scraper", "county": "marlow", "date": "2026-04-22T12:47:00Z",
+ "status": "SUCCEEDED", "exit_code": 0, "warnings": 0,
+ "docs_attempted": 19, "docs_read": 2, "rows_written": 17, "rows_missing_address": 15, "rows_ambiguous_owner": 15,
+ "delivered": true, "log_errors": ["image decode failed"], "checker_errors": [], "fix_targets": ["records"]}

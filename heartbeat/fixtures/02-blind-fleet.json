@@ -1,0 +1,101 @@
+{
+  "scenario": "Blind fleet: the same eight jobs, token lacks Actions read access",
+  "now": "2026-09-09T15:00:00Z",
+  "repo": "example-org/automation-fleet",
+  "expect": {
+    "level": "RED",
+    "exit_code": 1
+  },
+  "secret_names": [
+    "DAILY_EXPORT_SLACK_WEBHOOK_URL",
+    "INVENTORY_REFRESH_SLACK_WEBHOOK_URL",
+    "NIGHTLY_SYNC_SLACK_WEBHOOK_URL",
+    "OPS_HEARTBEAT_SLACK_WEBHOOK_URL",
+    "RECORD_CLEANUP_SLACK_WEBHOOK_URL",
+    "STATUS_PING_SLACK_WEBHOOK_URL",
+    "WEEKLY_REPORT_SLACK_WEBHOOK_URL",
+    "WEEKLY_ROLLUP_SLACK_WEBHOOK_URL"
+  ],
+  "workflows": [
+    {
+      "file": "nightly-sync.yml",
+      "name": "nightly-sync",
+      "cron": "0 6 * * *",
+      "notify_secret": "NIGHTLY_SYNC_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "weekly-rollup.yml",
+      "name": "weekly-rollup",
+      "cron": "0 11 * * 1",
+      "notify_secret": "WEEKLY_ROLLUP_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "daily-export.yml",
+      "name": "daily-export",
+      "cron": "30 7 * * *",
+      "notify_secret": "DAILY_EXPORT_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "inventory-refresh.yml",
+      "name": "inventory-refresh",
+      "cron": "0 9 * * 1-5",
+      "notify_secret": "INVENTORY_REFRESH_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "morning-digest.yml",
+      "name": "morning-digest",
+      "cron": "0 13 * * 1-5",
+      "notify_secret": "MORNING_DIGEST_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "record-cleanup.yml",
+      "name": "record-cleanup",
+      "cron": "0 4 * * *",
+      "notify_secret": "RECORD_CLEANUP_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "weekly-report.yml",
+      "name": "weekly-report",
+      "cron": "0 12 * * 3",
+      "notify_secret": "WEEKLY_REPORT_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    },
+    {
+      "file": "status-ping.yml",
+      "name": "status-ping",
+      "cron": "*/30 * * * *",
+      "notify_secret": "STATUS_PING_SLACK_WEBHOOK_URL",
+      "runs_error": {
+        "status": 403,
+        "reason": "Forbidden"
+      }
+    }
+  ]
+}
